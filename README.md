@@ -2,6 +2,8 @@
 
 A Python pipeline for analyzing denied healthcare claims using joined EDI 835/837 data. Takes a set of claims, figures out why each one was denied, estimates whether it's worth appealing, finds similar historical paid claims for context, and groups denials into actionable batches.
 
+Video Link- https://youtu.be/3_S8hY-Dn5Y
+
 No paid APIs required to run — works completely offline against the synthetic dataset.
 
 ---
