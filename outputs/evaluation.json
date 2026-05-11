@@ -1,0 +1,10 @@
+{
+  "labeled_claims": 36,
+  "verdict_accuracy": 1.0,
+  "avg_confidence": 0.739,
+  "breakdown": {
+    "not_recoverable \u2192 not_recoverable": 13,
+    "recoverable \u2192 recoverable": 15,
+    "needs_review \u2192 needs_review": 8
+  }
+}

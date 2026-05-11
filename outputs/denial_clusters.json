@@ -1,0 +1,519 @@
+[
+  {
+    "payer": "Medicare Part B",
+    "carc": "16",
+    "denial_type": "Information",
+    "procedure": "27447",
+    "claim_count": 2,
+    "total_denied_dollars": 25929.66,
+    "estimated_recovery": 21262.32,
+    "verdict_breakdown": {
+      "recoverable": 2
+    },
+    "claim_ids": [
+      "CLM-2026-00287",
+      "CLM-2026-01026"
+    ],
+    "summary": "2 Medicare Part B claim(s) | CPT 27447 | Information denial | $25,929.66 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "16",
+    "denial_type": "Information",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 13834.73,
+    "estimated_recovery": 11344.48,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01034"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 27447 | Information denial | $13,834.73 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "16",
+    "denial_type": "Information",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 12283.8,
+    "estimated_recovery": 10072.72,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01050"
+    ],
+    "summary": "1 United Healthcare claim(s) | CPT 27447 | Information denial | $12,283.80 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "50",
+    "denial_type": "Medical Necessity",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 14583.42,
+    "estimated_recovery": 9916.73,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01043"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 27447 | Medical Necessity denial | $14,583.42 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "197",
+    "denial_type": "Precertification",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 13373.38,
+    "estimated_recovery": 9628.83,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01044"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 27447 | Precertification denial | $13,373.38 at risk"
+  },
+  {
+    "payer": "State Medicaid",
+    "carc": "197",
+    "denial_type": "Precertification",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 13240.43,
+    "estimated_recovery": 9533.11,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01052"
+    ],
+    "summary": "1 State Medicaid claim(s) | CPT 27447 | Precertification denial | $13,240.43 at risk"
+  },
+  {
+    "payer": "State Medicaid",
+    "carc": "16",
+    "denial_type": "Information",
+    "procedure": "72148",
+    "claim_count": 1,
+    "total_denied_dollars": 9399.88,
+    "estimated_recovery": 7707.9,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01042"
+    ],
+    "summary": "1 State Medicaid claim(s) | CPT 72148 | Information denial | $9,399.88 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "72148",
+    "claim_count": 1,
+    "total_denied_dollars": 8028.56,
+    "estimated_recovery": 7065.13,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01049"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 72148 | Timely Filing denial | $8,028.56 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "197",
+    "denial_type": "Precertification",
+    "procedure": "72148",
+    "claim_count": 1,
+    "total_denied_dollars": 9150.87,
+    "estimated_recovery": 6588.63,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01036"
+    ],
+    "summary": "1 Medicare Part B claim(s) | CPT 72148 | Precertification denial | $9,150.87 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "50",
+    "denial_type": "Medical Necessity",
+    "procedure": "72148",
+    "claim_count": 1,
+    "total_denied_dollars": 7943.81,
+    "estimated_recovery": 6355.05,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-00391"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 72148 | Medical Necessity denial | $7,943.81 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "50",
+    "denial_type": "Medical Necessity",
+    "procedure": "72148",
+    "claim_count": 1,
+    "total_denied_dollars": 8317.31,
+    "estimated_recovery": 5655.77,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01051"
+    ],
+    "summary": "1 Medicare Part B claim(s) | CPT 72148 | Medical Necessity denial | $8,317.31 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "70553",
+    "claim_count": 2,
+    "total_denied_dollars": 8458.28,
+    "estimated_recovery": 3344.4,
+    "verdict_breakdown": {
+      "recoverable": 1,
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01025",
+      "CLM-2026-01040"
+    ],
+    "summary": "2 United Healthcare claim(s) | CPT 70553 | Timely Filing denial | $8,458.28 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "197",
+    "denial_type": "Precertification",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4058.31,
+    "estimated_recovery": 2921.98,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01028"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 70553 | Precertification denial | $4,058.31 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "50",
+    "denial_type": "Medical Necessity",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 3979.93,
+    "estimated_recovery": 2706.35,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01035"
+    ],
+    "summary": "1 United Healthcare claim(s) | CPT 70553 | Medical Necessity denial | $3,979.93 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "99214",
+    "claim_count": 1,
+    "total_denied_dollars": 257.13,
+    "estimated_recovery": 226.27,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01033"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 99214 | Timely Filing denial | $257.13 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "4",
+    "denial_type": "Coding",
+    "procedure": "99214",
+    "claim_count": 1,
+    "total_denied_dollars": 263.23,
+    "estimated_recovery": 194.79,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01054"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 99214 | Coding denial | $263.23 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "4",
+    "denial_type": "Coding",
+    "procedure": "99214",
+    "claim_count": 1,
+    "total_denied_dollars": 233.76,
+    "estimated_recovery": 172.98,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01038"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 99214 | Coding denial | $233.76 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "4",
+    "denial_type": "Coding",
+    "procedure": "99214",
+    "claim_count": 1,
+    "total_denied_dollars": 232.56,
+    "estimated_recovery": 172.09,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01030"
+    ],
+    "summary": "1 United Healthcare claim(s) | CPT 99214 | Coding denial | $232.56 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "99213",
+    "claim_count": 1,
+    "total_denied_dollars": 188.76,
+    "estimated_recovery": 166.11,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01041"
+    ],
+    "summary": "1 Medicare Part B claim(s) | CPT 99213 | Timely Filing denial | $188.76 at risk"
+  },
+  {
+    "payer": "State Medicaid",
+    "carc": "50",
+    "denial_type": "Medical Necessity",
+    "procedure": "99213",
+    "claim_count": 1,
+    "total_denied_dollars": 211.73,
+    "estimated_recovery": 143.98,
+    "verdict_breakdown": {
+      "needs_review": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01027"
+    ],
+    "summary": "1 State Medicaid claim(s) | CPT 99213 | Medical Necessity denial | $211.73 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "18",
+    "denial_type": "Duplicate",
+    "procedure": "99213",
+    "claim_count": 1,
+    "total_denied_dollars": 176.82,
+    "estimated_recovery": 134.38,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-00455"
+    ],
+    "summary": "1 United Healthcare claim(s) | CPT 99213 | Duplicate denial | $176.82 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "4",
+    "denial_type": "Coding",
+    "procedure": "99213",
+    "claim_count": 1,
+    "total_denied_dollars": 169.67,
+    "estimated_recovery": 125.56,
+    "verdict_breakdown": {
+      "recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01046"
+    ],
+    "summary": "1 Medicare Part B claim(s) | CPT 99213 | Coding denial | $169.67 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "99214",
+    "claim_count": 1,
+    "total_denied_dollars": 264.96,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-00142"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 99214 | Timely Filing denial | $264.96 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "27447",
+    "claim_count": 1,
+    "total_denied_dollars": 13246.01,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01024"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 27447 | Timely Filing denial | $13,246.01 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "18",
+    "denial_type": "Duplicate",
+    "procedure": "72148",
+    "claim_count": 2,
+    "total_denied_dollars": 16979.08,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 2
+    },
+    "claim_ids": [
+      "CLM-2026-01029",
+      "CLM-2026-01053"
+    ],
+    "summary": "2 Medicare Part B claim(s) | CPT 72148 | Duplicate denial | $16,979.08 at risk"
+  },
+  {
+    "payer": "Medicare Part B",
+    "carc": "96",
+    "denial_type": "Non-Covered",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4361.62,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01031"
+    ],
+    "summary": "1 Medicare Part B claim(s) | CPT 70553 | Non-Covered denial | $4,361.62 at risk"
+  },
+  {
+    "payer": "State Medicaid",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4442.66,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01032"
+    ],
+    "summary": "1 State Medicaid claim(s) | CPT 70553 | Timely Filing denial | $4,442.66 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "18",
+    "denial_type": "Duplicate",
+    "procedure": "99213",
+    "claim_count": 2,
+    "total_denied_dollars": 378.64,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 2
+    },
+    "claim_ids": [
+      "CLM-2026-01037",
+      "CLM-2026-01045"
+    ],
+    "summary": "2 Aetna claim(s) | CPT 99213 | Duplicate denial | $378.64 at risk"
+  },
+  {
+    "payer": "Blue Cross Blue Shield",
+    "carc": "96",
+    "denial_type": "Non-Covered",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4245.29,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01039"
+    ],
+    "summary": "1 Blue Cross Blue Shield claim(s) | CPT 70553 | Non-Covered denial | $4,245.29 at risk"
+  },
+  {
+    "payer": "State Medicaid",
+    "carc": "96",
+    "denial_type": "Non-Covered",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4768.68,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01047"
+    ],
+    "summary": "1 State Medicaid claim(s) | CPT 70553 | Non-Covered denial | $4,768.68 at risk"
+  },
+  {
+    "payer": "Aetna",
+    "carc": "29",
+    "denial_type": "Timely Filing",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4430.35,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01048"
+    ],
+    "summary": "1 Aetna claim(s) | CPT 70553 | Timely Filing denial | $4,430.35 at risk"
+  },
+  {
+    "payer": "United Healthcare",
+    "carc": "96",
+    "denial_type": "Non-Covered",
+    "procedure": "70553",
+    "claim_count": 1,
+    "total_denied_dollars": 4758.34,
+    "estimated_recovery": 0,
+    "verdict_breakdown": {
+      "not_recoverable": 1
+    },
+    "claim_ids": [
+      "CLM-2026-01055"
+    ],
+    "summary": "1 United Healthcare claim(s) | CPT 70553 | Non-Covered denial | $4,758.34 at risk"
+  }
+]

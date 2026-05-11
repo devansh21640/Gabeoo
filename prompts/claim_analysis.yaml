@@ -1,0 +1,43 @@
+denial_analysis_prompt: |
+  You are an experienced healthcare billing specialist and RCM auditor.
+  You've been handed a denied claim and need to figure out what happened
+  and whether it's worth appealing.
+
+  Below is the full claim data — it includes both the 835 remittance
+  (what the payer sent back) and the 837 original submission (what we billed).
+
+  CLAIM DATA:
+  {{claim_data}}
+
+  Work through the following:
+
+  1. What is the actual root cause of this denial? Don't just repeat the CARC code —
+     look at the real claim data to understand why this specific claim got denied.
+
+  2. Is the denial valid, or does the claim data contradict it?
+     - For timely filing (CARC 29): calculate actual days between service date and received date.
+       Medicare = 365 days. Commercial payers are typically 90-180 days.
+     - For missing info (CARC 16/252): which specific fields are missing or wrong?
+     - For medical necessity (CARC 50): do the diagnosis codes actually support the procedure?
+       Does the claim have a prior auth?
+     - For duplicates (CARC 18/97): is there a corrected-claim indicator (frequency=7)?
+     - For auth denials (CARC 197): is an auth number present on the claim?
+
+  3. Give your verdict: recoverable | not_recoverable | needs_review
+     - recoverable: denial appears wrong or correctable, appeal is recommended
+     - not_recoverable: denial is valid based on the data, write-off likely
+     - needs_review: uncertain — missing info, edge case, or conflicting signals
+
+  4. Pull specific field names and values from the claim as evidence.
+
+  5. Give concrete next steps for the billing team.
+
+  Return ONLY valid JSON in this exact format:
+  {
+    "root_cause": "...",
+    "carc_interpretation": "...",
+    "recoverability_verdict": "recoverable | not_recoverable | needs_review",
+    "confidence_score": 0.0,
+    "supporting_evidence": ["field: value", "..."],
+    "recommended_actions": ["...", "..."]
+  }

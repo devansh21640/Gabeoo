@@ -1,0 +1,4252 @@
+[
+  {
+    "claim_id": "CLM-2026-00142",
+    "root_cause": "Claim was filed 278 days after service, exceeding the 180-day limit for this payer.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.75,
+    "supporting_evidence": [
+      "Service date: 2025-06-15",
+      "Payer received: 2026-03-20",
+      "Days to file: 278",
+      "Filing limit for Blue Cross Blue Shield: 180 days",
+      "No delay reason code and not a replacement claim (frequency=7).",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Write off unless you have proof of earlier submission or a payer-specific waiver."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 7,
+        "denial_rate": 0.286,
+        "paid_rate": 0.714,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 10,
+        "denial_rate": 0.5,
+        "paid_rate": 0.5,
+        "common_denial_reasons": [
+          [
+            "4",
+            3
+          ],
+          [
+            "29",
+            2
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.95,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.8,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01016",
+        "score": 0.8,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "M54.5",
+        "status": "paid",
+        "paid": 192.33,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-00287",
+    "root_cause": "Payer returned claim because required information was missing or incorrect.",
+    "carc_interpretation": "CARC 16 (Information): Claim/service lacks info needed for adjudication",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.82,
+    "supporting_evidence": [
+      "Remark codes: N20",
+      "Empty required fields: none found in 837"
+    ],
+    "recommended_actions": [
+      "Correct and resubmit with demographics, diagnosis, NPI, and any supporting records."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01023",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6660.64,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.5,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M17.11']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-00391",
+    "root_cause": "Claim has diagnosis support for the denied procedure \u2014 good appeal candidate.",
+    "carc_interpretation": "CARC 50 (Medical Necessity): Service not deemed medically necessary by payer",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.8,
+    "supporting_evidence": [
+      "Procedure billed: 72148",
+      "Diagnoses on claim: ['M54.5', 'M51.16']",
+      "Prior auth: not present",
+      "Diagnosis codes are clinically consistent with the procedure."
+    ],
+    "recommended_actions": [
+      "Appeal with clinical notes, imaging, diagnosis rationale, and payer's medical policy."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01005",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 155.54,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01010",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 140.95,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01000",
+        "score": 0.4,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 120.91,
+        "match_reasons": [
+          "same payer",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-00455",
+    "root_cause": "Duplicate denial but no matching claim found in history \u2014 payer may have made an error.",
+    "carc_interpretation": "CARC 18 (Duplicate): Exact duplicate claim or service",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.76,
+    "supporting_evidence": [
+      "Claim signature (payer/proc/date/NPI/member): ('United Healthcare', '99213', '2026-01-10', '1234567890', 'SUB00455')",
+      "Matching claims in dataset: none",
+      "Claim frequency code: 1"
+    ],
+    "recommended_actions": [
+      "Appeal with corrected-claim indicator (freq=7), original control number, and line-item differences."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "18",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01005",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 155.54,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J20.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01010",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 140.95,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J20.9']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01024",
+    "root_cause": "Claim was filed 240 days after service, exceeding the 180-day limit for this payer.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.75,
+    "supporting_evidence": [
+      "Service date: 2025-11-18",
+      "Payer received: 2026-07-16",
+      "Days to file: 240",
+      "Filing limit for Blue Cross Blue Shield: 180 days",
+      "No delay reason code and not a replacement claim (frequency=7).",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Write off unless you have proof of earlier submission or a payer-specific waiver."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 3,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.7,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['M17.11']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01025",
+    "root_cause": "Timely filing denial does not hold up \u2014 claim was filed within the allowed window.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.88,
+    "supporting_evidence": [
+      "Service date: 2025-07-27",
+      "Payer received: 2025-09-10",
+      "Days to file: 45",
+      "Filing limit for United Healthcare: 90 days",
+      "Filed 45 days inside the deadline \u2014 denial appears incorrect."
+    ],
+    "recommended_actions": [
+      "Appeal with clearinghouse acceptance timestamp, service date, and payer receipt confirmation."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 4,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.65,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.65,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01026",
+    "root_cause": "Payer returned claim because required information was missing or incorrect.",
+    "carc_interpretation": "CARC 16 (Information): Claim/service lacks info needed for adjudication",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.82,
+    "supporting_evidence": [
+      "Remark codes: N20",
+      "Empty required fields: none found in 837"
+    ],
+    "recommended_actions": [
+      "Correct and resubmit with demographics, diagnosis, NPI, and any supporting records."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01013",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6279.64,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01018",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M51.16",
+        "status": "paid",
+        "paid": 5944.42,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01027",
+    "root_cause": "Diagnosis/procedure pairing doesn't clearly support medical necessity and no auth was obtained.",
+    "carc_interpretation": "CARC 50 (Medical Necessity): Service not deemed medically necessary by payer",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.68,
+    "supporting_evidence": [
+      "Procedure billed: 99213",
+      "Diagnoses on claim: ['R69']",
+      "Prior auth: not present",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Get clinical documentation from treating provider and check payer LCD before appealing."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 9,
+        "denial_rate": 0.556,
+        "paid_rate": 0.444,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01004",
+        "score": 0.4,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "R51.9",
+        "status": "paid",
+        "paid": 2798.87,
+        "match_reasons": [
+          "same payer",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.4,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same payer",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.4,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same payer",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01028",
+    "root_cause": "High-auth procedure submitted without prior authorization.",
+    "carc_interpretation": "CARC 197 (Precertification): Precertification/authorization/notification absent",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.72,
+    "supporting_evidence": [
+      "Procedure: 70553",
+      "Auth on claim: none",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Check scheduling system for a missed auth. If auth exists, resubmit corrected. If not, escalate for retroactive review."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "197",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.6,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.6,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01005",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 155.54,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01029",
+    "root_cause": "Duplicate denial is backed by a matching previously-adjudicated claim.",
+    "carc_interpretation": "CARC 18 (Duplicate): Exact duplicate claim or service",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.71,
+    "supporting_evidence": [
+      "Claim signature (payer/proc/date/NPI/member): ('Medicare Part B', '72148', '2025-12-19', '9876543210', 'SUB01003')",
+      "Matching claims in dataset: ['CLM-2026-01003', 'CLM-2026-01053']",
+      "Claim frequency code: 1",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify this wasn't meant as a corrected claim. If duplicate, write off."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 9,
+        "denial_rate": 0.444,
+        "paid_rate": 0.556,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ],
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 1.0,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M54.16']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01023",
+        "score": 0.85,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6660.64,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.7,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01030",
+    "root_cause": "E&M service likely needs modifier 25 (significant, separately identifiable service).",
+    "carc_interpretation": "CARC 4 (Coding): Procedure code is inconsistent with the modifier, or a required modifier is missing",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.74,
+    "supporting_evidence": [
+      "Procedure: 99214",
+      "Modifiers submitted: none"
+    ],
+    "recommended_actions": [
+      "Review encounter notes \u2014 if a separate problem was addressed, add mod 25 and resubmit."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 10,
+        "denial_rate": 0.5,
+        "paid_rate": 0.5,
+        "common_denial_reasons": [
+          [
+            "4",
+            3
+          ],
+          [
+            "29",
+            2
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.7,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01017",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 10999.65,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01031",
+    "root_cause": "Payer denied as non-covered service.",
+    "carc_interpretation": "CARC 96 (Non-Covered): Non-covered charge",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.57,
+    "supporting_evidence": [
+      "CARC 96 on 70553",
+      "No covered benefit evidence in claim data.",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify benefit plan and payer policy before writing off \u2014 some plans have exceptions."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 0.55,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01023",
+        "score": 0.55,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6660.64,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01004",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "R51.9",
+        "status": "paid",
+        "paid": 2798.87,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['R51.9']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01032",
+    "root_cause": "Claim was filed 240 days after service, exceeding the 180-day limit for this payer.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.75,
+    "supporting_evidence": [
+      "Service date: 2025-12-26",
+      "Payer received: 2026-08-23",
+      "Days to file: 240",
+      "Filing limit for State Medicaid: 180 days",
+      "No delay reason code and not a replacement claim (frequency=7).",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Write off unless you have proof of earlier submission or a payer-specific waiver."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 6,
+        "denial_rate": 0.333,
+        "paid_rate": 0.667,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 9,
+        "denial_rate": 0.556,
+        "paid_rate": 0.444,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01019",
+        "score": 0.95,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3462.03,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.8,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.8,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01033",
+    "root_cause": "Timely filing denial does not hold up \u2014 claim was filed within the allowed window.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.88,
+    "supporting_evidence": [
+      "Service date: 2025-12-19",
+      "Payer received: 2026-02-02",
+      "Days to file: 45",
+      "Filing limit for Aetna: 120 days",
+      "Filed 75 days inside the deadline \u2014 denial appears incorrect."
+    ],
+    "recommended_actions": [
+      "Appeal with clearinghouse acceptance timestamp, service date, and payer receipt confirmation."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 10,
+        "denial_rate": 0.5,
+        "paid_rate": 0.5,
+        "common_denial_reasons": [
+          [
+            "4",
+            3
+          ],
+          [
+            "29",
+            2
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.7,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01016",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "M54.5",
+        "status": "paid",
+        "paid": 192.33,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01034",
+    "root_cause": "Payer returned claim because required information was missing or incorrect.",
+    "carc_interpretation": "CARC 16 (Information): Claim/service lacks info needed for adjudication",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.82,
+    "supporting_evidence": [
+      "Remark codes: N20",
+      "Empty required fields: none found in 837"
+    ],
+    "recommended_actions": [
+      "Correct and resubmit with demographics, diagnosis, NPI, and any supporting records."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 3,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01007",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 8454.66,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M17.12']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01017",
+        "score": 0.6,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 10999.65,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M17.12']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01035",
+    "root_cause": "Diagnosis/procedure pairing doesn't clearly support medical necessity and no auth was obtained.",
+    "carc_interpretation": "CARC 50 (Medical Necessity): Service not deemed medically necessary by payer",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.68,
+    "supporting_evidence": [
+      "Procedure billed: 70553",
+      "Diagnoses on claim: ['R69']",
+      "Prior auth: not present",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Get clinical documentation from treating provider and check payer LCD before appealing."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 4,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01017",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 10999.65,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01022",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 8301.88,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01036",
+    "root_cause": "High-auth procedure submitted without prior authorization.",
+    "carc_interpretation": "CARC 197 (Precertification): Precertification/authorization/notification absent",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.72,
+    "supporting_evidence": [
+      "Procedure: 72148",
+      "Auth on claim: none",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Check scheduling system for a missed auth. If auth exists, resubmit corrected. If not, escalate for retroactive review."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 9,
+        "denial_rate": 0.444,
+        "paid_rate": 0.556,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ],
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 0.8,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['M54.16']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01013",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6279.64,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01037",
+    "root_cause": "Duplicate denial is backed by a matching previously-adjudicated claim.",
+    "carc_interpretation": "CARC 18 (Duplicate): Exact duplicate claim or service",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.71,
+    "supporting_evidence": [
+      "Claim signature (payer/proc/date/NPI/member): ('Aetna', '99213', '2025-12-22', '9876543210', 'SUB01000')",
+      "Matching claims in dataset: ['CLM-2026-01000', 'CLM-2026-01045']",
+      "Claim frequency code: 1",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify this wasn't meant as a corrected claim. If duplicate, write off."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 7,
+        "denial_rate": 0.286,
+        "paid_rate": 0.714,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01000",
+        "score": 0.95,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 120.91,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['I10']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01015",
+        "score": 0.95,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 136.5,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['I10']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01020",
+        "score": 0.8,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 165.05,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01038",
+    "root_cause": "E&M service likely needs modifier 25 (significant, separately identifiable service).",
+    "carc_interpretation": "CARC 4 (Coding): Procedure code is inconsistent with the modifier, or a required modifier is missing",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.74,
+    "supporting_evidence": [
+      "Procedure: 99214",
+      "Modifiers submitted: none"
+    ],
+    "recommended_actions": [
+      "Review encounter notes \u2014 if a separate problem was addressed, add mod 25 and resubmit."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 10,
+        "denial_rate": 0.5,
+        "paid_rate": 0.5,
+        "common_denial_reasons": [
+          [
+            "4",
+            3
+          ],
+          [
+            "29",
+            2
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.7,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01016",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "M54.5",
+        "status": "paid",
+        "paid": 192.33,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01039",
+    "root_cause": "Payer denied as non-covered service.",
+    "carc_interpretation": "CARC 96 (Non-Covered): Non-covered charge",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.57,
+    "supporting_evidence": [
+      "CARC 96 on 70553",
+      "No covered benefit evidence in claim data.",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify benefit plan and payer policy before writing off \u2014 some plans have exceptions."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01016",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "M54.5",
+        "status": "paid",
+        "paid": 192.33,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01004",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "R51.9",
+        "status": "paid",
+        "paid": 2798.87,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['R51.9']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01040",
+    "root_cause": "Claim was filed 240 days after service, exceeding the 90-day limit for this payer.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.75,
+    "supporting_evidence": [
+      "Service date: 2025-12-15",
+      "Payer received: 2026-08-12",
+      "Days to file: 240",
+      "Filing limit for United Healthcare: 90 days",
+      "No delay reason code and not a replacement claim (frequency=7).",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Write off unless you have proof of earlier submission or a payer-specific waiver."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 4,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01019",
+        "score": 0.6,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3462.03,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01007",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 8454.66,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01041",
+    "root_cause": "Timely filing denial does not hold up \u2014 claim was filed within the allowed window.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.88,
+    "supporting_evidence": [
+      "Service date: 2025-11-15",
+      "Payer received: 2025-12-30",
+      "Days to file: 45",
+      "Filing limit for Medicare Part B: 365 days",
+      "Filed 320 days inside the deadline \u2014 denial appears incorrect."
+    ],
+    "recommended_actions": [
+      "Appeal with clearinghouse acceptance timestamp, service date, and payer receipt confirmation."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01005",
+        "score": 0.45,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 155.54,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01010",
+        "score": 0.45,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 140.95,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 0.4,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01042",
+    "root_cause": "Payer returned claim because required information was missing or incorrect.",
+    "carc_interpretation": "CARC 16 (Information): Claim/service lacks info needed for adjudication",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.82,
+    "supporting_evidence": [
+      "Remark codes: N20",
+      "Empty required fields: none found in 837"
+    ],
+    "recommended_actions": [
+      "Correct and resubmit with demographics, diagnosis, NPI, and any supporting records."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 9,
+        "denial_rate": 0.556,
+        "paid_rate": 0.444,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01018",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M51.16",
+        "status": "paid",
+        "paid": 5944.42,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M51.16']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.5,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01013",
+        "score": 0.5,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6279.64,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01043",
+    "root_cause": "Diagnosis/procedure pairing doesn't clearly support medical necessity and no auth was obtained.",
+    "carc_interpretation": "CARC 50 (Medical Necessity): Service not deemed medically necessary by payer",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.68,
+    "supporting_evidence": [
+      "Procedure billed: 27447",
+      "Diagnoses on claim: ['R69']",
+      "Prior auth: not present",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Get clinical documentation from treating provider and check payer LCD before appealing."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01000",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 120.91,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01007",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 8454.66,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01015",
+        "score": 0.55,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 136.5,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01044",
+    "root_cause": "High-auth procedure submitted without prior authorization.",
+    "carc_interpretation": "CARC 197 (Precertification): Precertification/authorization/notification absent",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.72,
+    "supporting_evidence": [
+      "Procedure: 27447",
+      "Auth on claim: none",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Check scheduling system for a missed auth. If auth exists, resubmit corrected. If not, escalate for retroactive review."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 3,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.7,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01045",
+    "root_cause": "Duplicate denial is backed by a matching previously-adjudicated claim.",
+    "carc_interpretation": "CARC 18 (Duplicate): Exact duplicate claim or service",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.71,
+    "supporting_evidence": [
+      "Claim signature (payer/proc/date/NPI/member): ('Aetna', '99213', '2025-12-22', '9876543210', 'SUB01000')",
+      "Matching claims in dataset: ['CLM-2026-01000', 'CLM-2026-01037']",
+      "Claim frequency code: 1",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify this wasn't meant as a corrected claim. If duplicate, write off."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 7,
+        "denial_rate": 0.286,
+        "paid_rate": 0.714,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01000",
+        "score": 0.95,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 120.91,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['I10']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01015",
+        "score": 0.95,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "I10",
+        "status": "paid",
+        "paid": 136.5,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['I10']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01020",
+        "score": 0.8,
+        "payer": "Aetna",
+        "procedure": "99213",
+        "diagnosis": "J20.9",
+        "status": "paid",
+        "paid": 165.05,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01046",
+    "root_cause": "E&M service likely needs modifier 25 (significant, separately identifiable service).",
+    "carc_interpretation": "CARC 4 (Coding): Procedure code is inconsistent with the modifier, or a required modifier is missing",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.74,
+    "supporting_evidence": [
+      "Procedure: 99213",
+      "Modifiers submitted: none"
+    ],
+    "recommended_actions": [
+      "Review encounter notes \u2014 if a separate problem was addressed, add mod 25 and resubmit."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 11,
+        "denial_rate": 0.545,
+        "paid_rate": 0.455,
+        "common_denial_reasons": [
+          [
+            "18",
+            3
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01013",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6279.64,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01018",
+        "score": 0.6,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M51.16",
+        "status": "paid",
+        "paid": 5944.42,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01047",
+    "root_cause": "Payer denied as non-covered service.",
+    "carc_interpretation": "CARC 96 (Non-Covered): Non-covered charge",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.57,
+    "supporting_evidence": [
+      "CARC 96 on 70553",
+      "No covered benefit evidence in claim data.",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify benefit plan and payer policy before writing off \u2014 some plans have exceptions."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 6,
+        "denial_rate": 0.333,
+        "paid_rate": 0.667,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 9,
+        "denial_rate": 0.556,
+        "paid_rate": 0.444,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01004",
+        "score": 0.8,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "R51.9",
+        "status": "paid",
+        "paid": 2798.87,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['R51.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.65,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.65,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01048",
+    "root_cause": "Claim was filed 240 days after service, exceeding the 120-day limit for this payer.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.75,
+    "supporting_evidence": [
+      "Service date: 2025-08-01",
+      "Payer received: 2026-03-29",
+      "Days to file: 240",
+      "Filing limit for Aetna: 120 days",
+      "No delay reason code and not a replacement claim (frequency=7).",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Write off unless you have proof of earlier submission or a payer-specific waiver."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 2,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "197",
+            1
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01009",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3557.98,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01014",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3464.55,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01019",
+        "score": 0.45,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3462.03,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['G44.52']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01049",
+    "root_cause": "Timely filing denial does not hold up \u2014 claim was filed within the allowed window.",
+    "carc_interpretation": "CARC 29 (Timely Filing): Time limit for filing has expired",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.88,
+    "supporting_evidence": [
+      "Service date: 2025-07-31",
+      "Payer received: 2025-09-14",
+      "Days to file: 45",
+      "Filing limit for Blue Cross Blue Shield: 180 days",
+      "Filed 135 days inside the deadline \u2014 denial appears incorrect."
+    ],
+    "recommended_actions": [
+      "Appeal with clearinghouse acceptance timestamp, service date, and payer receipt confirmation."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01023",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6660.64,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M48.06']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01011",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "E11.9",
+        "status": "paid",
+        "paid": 194.81,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01021",
+        "score": 0.55,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 197.01,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01050",
+    "root_cause": "Payer returned claim because required information was missing or incorrect.",
+    "carc_interpretation": "CARC 16 (Information): Claim/service lacks info needed for adjudication",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.82,
+    "supporting_evidence": [
+      "Remark codes: N20",
+      "Empty required fields: none found in 837"
+    ],
+    "recommended_actions": [
+      "Correct and resubmit with demographics, diagnosis, NPI, and any supporting records."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 6,
+        "denial_rate": 0.167,
+        "paid_rate": 0.833,
+        "common_denial_reasons": [
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 1.0,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.85,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01017",
+        "score": 0.85,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 10999.65,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01051",
+    "root_cause": "Diagnosis/procedure pairing doesn't clearly support medical necessity and no auth was obtained.",
+    "carc_interpretation": "CARC 50 (Medical Necessity): Service not deemed medically necessary by payer",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.68,
+    "supporting_evidence": [
+      "Procedure billed: 72148",
+      "Diagnoses on claim: ['R69']",
+      "Prior auth: not present",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Get clinical documentation from treating provider and check payer LCD before appealing."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 9,
+        "denial_rate": 0.444,
+        "paid_rate": 0.556,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ],
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01013",
+        "score": 0.65,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6279.64,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01052",
+    "root_cause": "High-auth procedure submitted without prior authorization.",
+    "carc_interpretation": "CARC 197 (Precertification): Precertification/authorization/notification absent",
+    "recoverability_verdict": "needs_review",
+    "confidence_score": 0.72,
+    "supporting_evidence": [
+      "Procedure: 27447",
+      "Auth on claim: none",
+      "3 paid analog(s) found \u2014 supports appeal potential."
+    ],
+    "recommended_actions": [
+      "Check scheduling system for a missed auth. If auth exists, resubmit corrected. If not, escalate for retroactive review."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 1,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "197",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 9,
+        "denial_rate": 0.556,
+        "paid_rate": 0.444,
+        "common_denial_reasons": [
+          [
+            "50",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 13,
+        "denial_rate": 0.615,
+        "paid_rate": 0.385,
+        "common_denial_reasons": [
+          [
+            "16",
+            4
+          ],
+          [
+            "197",
+            2
+          ],
+          [
+            "29",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01019",
+        "score": 0.55,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "G44.52",
+        "status": "paid",
+        "paid": 3462.03,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01002",
+        "score": 0.45,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 11661.72,
+        "match_reasons": [
+          "same procedure code",
+          "same place of service",
+          "shared diagnoses: ['M17.11']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01007",
+        "score": 0.45,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 8454.66,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01053",
+    "root_cause": "Duplicate denial is backed by a matching previously-adjudicated claim.",
+    "carc_interpretation": "CARC 18 (Duplicate): Exact duplicate claim or service",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.71,
+    "supporting_evidence": [
+      "Claim signature (payer/proc/date/NPI/member): ('Medicare Part B', '72148', '2025-12-19', '9876543210', 'SUB01003')",
+      "Matching claims in dataset: ['CLM-2026-01003', 'CLM-2026-01029']",
+      "Claim frequency code: 1",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify this wasn't meant as a corrected claim. If duplicate, write off."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 9,
+        "denial_rate": 0.444,
+        "paid_rate": 0.556,
+        "common_denial_reasons": [
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ],
+          [
+            "50",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 14,
+        "denial_rate": 0.643,
+        "paid_rate": 0.357,
+        "common_denial_reasons": [
+          [
+            "16",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "50",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01003",
+        "score": 1.0,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M54.16",
+        "status": "paid",
+        "paid": 5937.38,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth",
+          "shared diagnoses: ['M54.16']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01023",
+        "score": 0.85,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 6660.64,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01008",
+        "score": 0.7,
+        "payer": "Medicare Part B",
+        "procedure": "72148",
+        "diagnosis": "M48.06",
+        "status": "paid",
+        "paid": 7306.72,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "both have/lack auth"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01054",
+    "root_cause": "E&M service likely needs modifier 25 (significant, separately identifiable service).",
+    "carc_interpretation": "CARC 4 (Coding): Procedure code is inconsistent with the modifier, or a required modifier is missing",
+    "recoverability_verdict": "recoverable",
+    "confidence_score": 0.74,
+    "supporting_evidence": [
+      "Procedure: 99214",
+      "Modifiers submitted: none"
+    ],
+    "recommended_actions": [
+      "Review encounter notes \u2014 if a separate problem was addressed, add mod 25 and resubmit."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 7,
+        "denial_rate": 0.286,
+        "paid_rate": 0.714,
+        "common_denial_reasons": [
+          [
+            "29",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            3
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 10,
+        "denial_rate": 0.5,
+        "paid_rate": 0.5,
+        "common_denial_reasons": [
+          [
+            "4",
+            3
+          ],
+          [
+            "29",
+            2
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01021",
+        "score": 0.95,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 197.01,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01001",
+        "score": 0.8,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 184.74,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01006",
+        "score": 0.8,
+        "payer": "Blue Cross Blue Shield",
+        "procedure": "99214",
+        "diagnosis": "J06.9",
+        "status": "paid",
+        "paid": 149.45,
+        "match_reasons": [
+          "same payer",
+          "same procedure code",
+          "same insurance type",
+          "same place of service",
+          "shared diagnoses: ['J06.9']"
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-01055",
+    "root_cause": "Payer denied as non-covered service.",
+    "carc_interpretation": "CARC 96 (Non-Covered): Non-covered charge",
+    "recoverability_verdict": "not_recoverable",
+    "confidence_score": 0.57,
+    "supporting_evidence": [
+      "CARC 96 on 70553",
+      "No covered benefit evidence in claim data.",
+      "Found 3 historically paid claim(s) with similar payer/procedure \u2014 consider appeal before writing off."
+    ],
+    "recommended_actions": [
+      "Verify benefit plan and payer policy before writing off \u2014 some plans have exceptions."
+    ],
+    "historical_context": {
+      "same_payer_and_procedure": {
+        "count": 4,
+        "denial_rate": 1.0,
+        "paid_rate": 0.0,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "96",
+            1
+          ]
+        ]
+      },
+      "same_payer_all_procedures": {
+        "count": 12,
+        "denial_rate": 0.583,
+        "paid_rate": 0.417,
+        "common_denial_reasons": [
+          [
+            "29",
+            2
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "4",
+            1
+          ]
+        ]
+      },
+      "same_procedure_all_payers": {
+        "count": 14,
+        "denial_rate": 0.714,
+        "paid_rate": 0.286,
+        "common_denial_reasons": [
+          [
+            "29",
+            4
+          ],
+          [
+            "96",
+            4
+          ],
+          [
+            "197",
+            1
+          ]
+        ]
+      }
+    },
+    "similar_paid_claims": [
+      {
+        "claim_id": "CLM-2026-01004",
+        "score": 0.6,
+        "payer": "State Medicaid",
+        "procedure": "70553",
+        "diagnosis": "R51.9",
+        "status": "paid",
+        "paid": 2798.87,
+        "match_reasons": [
+          "same procedure code",
+          "same billing NPI",
+          "same place of service",
+          "shared diagnoses: ['R51.9']"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01012",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.11",
+        "status": "paid",
+        "paid": 13217.82,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      },
+      {
+        "claim_id": "CLM-2026-01017",
+        "score": 0.55,
+        "payer": "United Healthcare",
+        "procedure": "27447",
+        "diagnosis": "M17.12",
+        "status": "paid",
+        "paid": 10999.65,
+        "match_reasons": [
+          "same payer",
+          "same billing NPI",
+          "same insurance type",
+          "same place of service"
+        ]
+      }
+    ]
+  }
+]
